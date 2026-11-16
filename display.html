@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f2f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px #d5d9e5;
+        }
+
+        h2 {
+            color: #2563eb;
+            text-align: center;
+        }
+
+        p {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Submitted User Information</h2>
+
+    <p>Name: <span id="name"></span></p>
+
+    <p>Gender: <span id="gender"></span></p>
+
+    <p>Mobile: <span id="mobile"></span></p>
+
+    <p>Email: <span id="email"></span></p>
+
+    <p>City: <span id="city"></span></p>
+
+    <p>State: <span id="state"></span></p>
+
+    <p>Country: <span id="country"></span></p>
+
+    <center>
+        <button onclick="history.back()">Go Back</button>
+    </center>
+
+</div>
+
+<script>
+
+document.getElementById("name").innerText =
+    localStorage.getItem("name");
+
+document.getElementById("gender").innerText =
+    localStorage.getItem("gender");
+
+document.getElementById("mobile").innerText =
+    localStorage.getItem("mobile");
+
+document.getElementById("email").innerText =
+    localStorage.getItem("email");
+
+document.getElementById("city").innerText =
+    localStorage.getItem("city");
+
+document.getElementById("state").innerText =
+    localStorage.getItem("state");
+
+document.getElementById("country").innerText =
+    localStorage.getItem("country");
+
+</script>
+
+</body>
+</html>
